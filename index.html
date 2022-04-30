@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Kresna R.M">
+  <meta name="keywords" content="Kresna-rev | Portfolio">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Portfolio | Kresna" />
+  <meta property="og:url" content="https://github.com/kresna-rev/kresna-rev.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="Sebuah Portfolio dari seorang anak desa" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:image" content="https://github.com/kresna-rev/kresna-rev.github.io/img/profile.jpg" />
+
+  <title>Kresna.id | Portfolio</title>
+  
+  <!-- HTML -->
+  <!--Favicon-->
+  <link rel="icon" href="favicon.ico" type="image/jpg">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body>
+      <header class="nav center">
+        <p class="logo">My Portfolio</p>
+        <input type="checkbox" name="" class="checkBtn"/>
+        <ol class="center">
+            <a href="#About"><li>About</li></a>
+            <a href="#Education"><li>Education</li></a>
+            <a href="#Projects"><li>Projects</li></a>
+            <a href="#Contact"><li>Contact</li></a>
+        </ol>
+    </header>
+    <section class="main">
+        <div class="box" data-aos="fade-up-right" data-aos-delay="100">
+            <h1>Kresna</h1>
+            <p>Front-End Developer & UI/UX</p>
+            <button class="btn">About</button>
+        </div>
+        <img src="img/instadp_kr0_0sx_full_size.jpg" alt="My Picture" data-aos="fade-down-left">
+    </section>
+
+
+    <!-- about -->
+    <div class="about center" id="About">
+        <div class="box_wrap" data-aos="fade-right" data-aos-delay="100">
+            <p class="heading">About</p>
+            <p class="text">Hello! My name is Kresna R.M, I'm a student, and i like Tzuyu of Twice. I have a diverse set of skills,ranging from design, to Web dev.</p>
+        </div>
+        <div class="box_wrap" data-aos="fade-left" data-aos-delay="200"> 
+            <p class="heading">Skills</p>
+            <div class="skills_box">
+                <i class="fab fa-html5 fa-3x"></i>
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <i class="fab fa-js fa-3x"></i>
+                <i class="fab fa-php fa-3x"></i>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- education -->
+    <div class="education center" id="Education">
+        <div class="left_box" data-aos="fade-right" data-aos-delay="200">
+            <h1 class="heading">Education</h1>
+            <div class="container">
+                <h3>SMK PASUNDAN SUBANG</h3>
+                <p>Rekayasa Perangkat Lunak</p>
+                <small>Jun 2019-2022</small>
+            </div>
+            <div class="container">
+                <h3>Harvard University</h3>
+                <p>Web Development</p>
+                <small>maybe someday</small>
+            </div>
+        </div>
+        <div class="right_box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/University.jpg" alt="">
+        </div>
+    </div>
+
+
+    <!-- Projects -->
+    <div class="projects center" id="Projects" data-aos="zoom-in-up" data-aos-delay="300">
+        <h3>Projects</h3>
+        <div class="container">
+            <a href="#">
+                <div>Coming Soon</div>
+            </a>
+            <a href="#">
+               <div>Coming Soon</div>
+            </a>
+            <a href="#">
+               <div>Coming Soon</div>
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <footer class="contact center" id="Contact">
+        
+          <h3 data-aos="zoom-in-up">Contact</h3>
+          
+          <div class="my-style my-alert" role="alert">
+            <p class="thx">ありがとう ございます!</p>
+            <p class="message">We have received  your message.</p>
+          </div>
+          
+          <form class="center" data-aos="zoom-in-up" data-aos-delay="150" name="contact-form">
+              <input type="text" name="nama" id="" placeholder="*name" required>
+              <input type="email" name="email" id="" placeholder="*email" required>
+              <textarea name="pesan" id="" cols="30" rows="10" placeholder="*message" required></textarea>
+              <button type="submit" class="btn">SUBMIT</button>
+          </form>
+          <div class="box_wrap" data-aos="zoom-in-up">
+              <p class="heading">find me on</p>
+              <div class="contact_box">
+                  <a href="https://instagram.com/abcdefghij__k__lmnopqrstuvwxyz/" target="_blank">
+                    <i class="fab fa-instagram fa-3x"></i>
+                  </a>
+                  <a href="https://mobile.twitter.com/BuceIce" target="_blank">
+                    <i class="fab fa-twitter fa-3x"></i>
+                  </a>
+                  <a href="https://github.com/kresna-rev" target="_blank">
+                    <i class="fab fa-github-square fa-3x"></i>
+                  </a>
+              </div>
+          </div>
+        
+        <div class="copy">
+          <p> copyright&copy; 2021 - <span id="year"></span> by Krsna🤖
+          </p>
+        </div>
+    </footer>
+    
+  <!-- My JS -->
+  <script src="main.js"></script>
+  
+  
+  <!-- AOS JS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 500,
+      offset: 120
+    });
+  </script>
+  
+    <!-- Script Contact form/submit-->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyExsQ70MjwMxj-qP8g0Q0hIfhiBPROf4MQPcN_-ZbI5G9nGcL1ErjhBbP-ffQjonNPbQ/exec'
+    const form = document.forms['contact-form'];
+    const Alert = document.querySelector('.my-alert');
+    
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          //tampilkan alert
+          Alert.classList.toggle('my-alert');
+          
+          //mereset form
+          form.reset();
+          
+          console.log('Success!', response)
+          
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
