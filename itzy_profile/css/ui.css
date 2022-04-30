@@ -1,0 +1,1551 @@
+@charset "UTF-8";
+/* 20210906 @import url("../css/common/font.css"); */
+
+/* 20210906 font */
+@font-face {
+    font-family: "spoqanthin";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../../fonts/SpoqaHanSansNeo-Thin.woff) format("woff")
+}
+
+@font-face {
+    font-family: "spoqanlight";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../../fonts/) format("woff")
+}
+
+@font-face {
+    font-family: "spoqanregular";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../../fonts/SpoqaHanSansNeo-Regular.woff) format("woff")
+}
+
+@font-face {
+    font-family: "spoqanmedium";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../../fonts/SpoqaHanSansNeo-Medium.woff) format("woff")
+}
+
+@font-face {
+    font-family: "spoqanbold";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../../../fonts/SpoqaHanSansNeo-Bold.woff) format("woff")
+}
+
+/* Reset */
+* {
+    font-family: spoqanmedium, 'Sans-serif', 'Montserrat'
+}
+
+/*main*/
+
+
+.main_bkbg_m {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.mv_img_m {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: top center;
+}
+
+.textWrap {
+    position: relative;
+    top: 19%;
+    width: 50px;
+    height: 50px;
+    float: right;
+    cursor: pointer;
+    z-index: 111;
+}
+
+
+    .textWrap .play_m {
+        width: 50px;
+        transition: .3s;
+        right: 0;
+    }
+
+        .textWrap .play_m svg path {
+            transition: .3s
+        }
+
+    .textWrap:hover .play_m {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9)
+    }
+
+
+
+.main_album_m .mmv {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    right: 8px;
+}
+
+    .main_album_m .mmv p {
+        float: right;
+    }
+
+    .main_album_m .mmv .main_more_view {
+        font-family: 'Montserrat';
+        font-size: 11px;
+        font-weight: 600;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+
+    .main_album_m .mmv .main_line {
+        position: relative;
+        width: 70px;
+        top: 7px;
+        margin-left: 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+.line-title span:hover:after {
+    width: 100%
+}
+
+.line-title span:after {
+    background-color: #f00;
+    height: 2px;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 0;
+    -moz-transition: all .2s cubic-bezier(.15,.9,.34,.95);
+    -o-transition: all .2s cubic-bezier(.15,.9,.34,.95);
+    -webkit-transition: all .2s cubic-bezier(.15,.9,.34,.95);
+    transition: all .2s cubic-bezier(.15,.9,.34,.95);
+}
+
+
+/*profile*/
+
+
+.cont_m.profile {
+    padding: 40px 0 0 0;
+}
+
+.pf_list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.pf_member {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+
+    .pf_member .pf_box_m {
+        position: relative;
+        width: 100%;
+        top: -70px;
+    }
+
+        .pf_member .pf_box_m div {
+            display: block;
+        }
+
+    /*프로필-오른쪽*/
+
+
+    .pf_member.left .pf_img img {
+        margin-right: 20%;
+    }
+
+    .pf_member.left .pf_txt {
+        right: 0px;
+    }
+
+    .pf_member.left .pf_txt_cont {
+        position: relative;
+        float: right;
+        padding: 10px 25px 10px 15px;
+    }
+
+        .pf_member.left .pf_txt_cont p {
+            text-align: right;
+        }
+
+    .pf_member.left .coend-marker {
+        padding: 5px 25px 5px 15px;
+    }
+
+
+
+    /*프로필-왼쪽*/
+
+
+    .pf_member.right .pf_img img {
+        margin-left: 20%;
+    }
+
+    .pf_member.right .pf_txt {
+        left: 0px;
+    }
+
+    .pf_member.right .pf_txt_cont {
+        position: relative;
+        margin-right: 29%;
+        padding: 10px 15px 10px 25px;
+    }
+
+        .pf_member.right .pf_txt_cont p {
+            text-align: left;
+        }
+
+    .pf_member.right .coend-marker {
+        padding: 5px 15px 5px 25px;
+    }
+
+
+
+.pf_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .pf_img img {
+        width: 80%;
+        vertical-align: bottom;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+/*1004수정시작*/
+.pf_txt {
+    position: absolute;
+    width: auto;
+    color: #000;
+}
+
+
+    .pf_txt .pf_name {
+        position: relative;
+        width: auto;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 18pt;
+    }
+
+.coend-marker {
+    position: relative;
+    left: 0px;
+    width: auto;
+    background-color: #fff;
+    opacity: 0.88;
+}
+
+.pf_txt_cont {
+    position: relative;
+    width: 60%;
+    background-color: #fff;
+    opacity: 0.88;
+    top: 43px;
+}
+
+    .pf_txt_cont p {
+        width: 100%;
+        font-size: 10pt;
+        line-height: 22px;
+        color: #000;
+    }
+
+        /*1004수정끝*/
+
+        .pf_txt_cont p span {
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*discography*/
+
+.dis_bt_top_m {
+    position: relative;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 9pt;
+    font-weight: 700;
+}
+
+    .dis_bt_top_m .back {
+        text-align: left;
+        float: left;
+    }
+
+    .dis_bt_top_m .lang_m {
+        float: right;
+        color: #BBBBBB;
+        font-weight: 400;
+        margin-right: 5%;
+        margin-bottom: 10px;
+    }
+
+        .dis_bt_top_m .lang_m p {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+            .dis_bt_top_m .lang_m p:last-child {
+                margin: 0 0 0 5px;
+            }
+
+            .dis_bt_top_m .lang_m p a {
+                color: #BBBBBB;
+                font-family: 'Montserrat';
+            }
+
+
+.onlin_cover_m {
+    position: relative;
+    width: 100%;
+}
+
+    .onlin_cover_m .cover_img {
+        width: 100%;
+    }
+
+        .onlin_cover_m .cover_img img {
+            width: 100%;
+            vertical-align: bottom;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .onlin_cover_m p {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 11;
+    }
+
+    .onlin_cover_m .arr_left {
+        width: 30px;
+        left: 20px;
+    }
+
+    .onlin_cover_m .arr_right {
+        width: 30px;
+        right: -10px;
+    }
+
+    .onlin_cover_m p img {
+        width: 100%;
+    }
+
+.dis_bt_bottom_m {
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    font-size: 9pt;
+    font-weight: 700;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+    .dis_bt_bottom_m P {
+        float: left;
+        font-family: 'Montserrat';
+    }
+
+    .dis_bt_bottom_m .dis_date {
+        font-size: 8pt;
+        line-height: 19px;
+        float: right;
+    }
+
+.dis_cont {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.dis_txt_top_m {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .dis_txt_top_m .name_m {
+        font-size: 13pt;
+        margin-bottom: 5px;
+        font-weight: 400;
+    }
+
+    /* 20210906 수정 */
+    .dis_txt_top_m .album_name_m {
+        font-size: 18pt;
+        line-height: 35px;
+        letter-spacing: 0.05em;
+        font-family: spoqanbold;
+    }
+
+/* 20210906 수정 */
+.dis_txt_tt_m {
+    position: relative;
+    padding: 30px 0;
+    font-size: 10pt;
+    line-height: 25px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+    /* 20210906 수정 */
+    .dis_txt_tt_m .dis_tt_m {
+        margin-bottom: 30px;
+        font-family: spoqanbold;
+    }
+
+    .dis_txt_tt_m .dis_stt_m {
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+        .dis_txt_tt_m .dis_stt_m p {
+            word-break: keep-all;
+            word-wrap: break-word;
+            display: inline-block;
+            vertical-align: top;
+            width: 94%;
+        }
+
+.dis_txt_stt div span {
+    display: inline;
+    margin-right: 10px;
+}
+
+
+.dis_more_cont_m {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    font-size: 9pt;
+    font-weight: 400;
+    line-height: 25px;
+    float: left;
+    padding-bottom: 50px;
+    /*word-break:keep-all; word-wrap:break-word;*/
+}
+
+.morecontent span {
+    display: none;
+}
+
+.morelink {
+    display: inline-block;
+    color: #999;
+}
+
+/*discography-tracklist*/
+
+/* 20210906 수정 */
+.text-tall {
+    font-size: 12pt;
+    line-height: 25px;
+    font-family: spoqanbold;
+}
+
+.release-playlist ol li, .release-playlist ul li {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+    counter-increment: step-counter;
+    letter-spacing: 0.04em;
+}
+
+    .release-playlist ol li:before, .release-playlist ul li:before {
+        content: counter(step-counter) ".";
+        position: absolute;
+        left: 0;
+        top: 2px;
+        color: currentColor;
+        font-size: 11pt;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+
+.tracklist_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+    .tracklist_m .tl_tt {
+        position: relative;
+        width: 100%;
+        font-size: 15pt;
+        font-family: 'Montserrat';
+        margin-bottom: 20px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+    }
+
+        .tracklist_m .tl_tt .dis-line {
+            display: inline-block;
+            width: 50%;
+            height: 4px;
+            background-color: #000;
+            float: right;
+            vertical-align: middle;
+            top: 20px;
+            margin: 10px 0;
+        }
+
+.video_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+    .video_m iframe {
+        height: 60vw;
+        width: 100%;
+    }
+
+    .video_m .vd_tt {
+        position: relative;
+        width: 100%;
+        font-size: 15pt;
+        font-family: 'Montserrat';
+        margin-bottom: 20px;
+        letter-spacing: 0.05em;
+        font-weight: 700;
+    }
+
+        .video_m .vd_tt .dis-line {
+            display: inline-block;
+            width: 69%;
+            height: 4px;
+            background-color: #000;
+            float: right;
+            vertical-align: middle;
+            top: 20px;
+            margin: 10px 0;
+        }
+
+/*list-buttom*/
+
+.a_btn_m {
+    display: inline-block;
+    min-width: 220px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .15s linear;
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12pt;
+    letter-spacing: 0.15em;
+}
+
+
+/*discography-list*/
+
+.disco_list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .disco_list .onlin_cover_list {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+.dis_list_txt {
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    font-size: 9pt;
+    font-weight: 600;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+
+    .dis_list_txt li {
+        float: left;
+    }
+
+    .dis_list_txt .dis_date {
+        font-size: 8pt;
+        line-height: 19px;
+        float: right;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+
+.onlin_cover_list {
+    position: relative;
+    width: 100%;
+    /*box-shadow: 5px 5px 5px 0px #bdbcbc;*/
+}
+
+    .onlin_cover_list .cover_img {
+        width: 100%;
+    }
+
+        .onlin_cover_list .cover_img img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+    .onlin_cover_list p img {
+        width: 100%;
+    }
+
+/*gallery*/
+
+.gallery_list_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .gallery_list_m .gl_photo {
+        float: left;
+        width: 100%;
+    }
+
+        .gallery_list_m .gl_photo a img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+
+
+/* ---- grid ---- */
+
+.grid {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+}
+
+    /* clear fix */
+
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+.grid-item {
+    max-width: 90%;
+    padding: 0 5%;
+}
+
+    .grid-item img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        background: #fff;
+    }
+
+.cutimg_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .cutimg_m .layout_m {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-basis: auto;
+        overflow: hidden;
+        float: left;
+        padding-bottom: 30px;
+    }
+
+        .cutimg_m .layout_m .photobox_m {
+            position: relative;
+            width: 100%;
+            height: auto;
+            flex-basis: auto;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+            .cutimg_m .layout_m .photobox_m img {
+                width: 90%;
+                height: auto;
+                overflow: hidden;
+                flex-basis: auto;
+                margin: 0 auto;
+            }
+
+
+
+
+
+
+/*video*/
+
+.video_list {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .video_list .video_view {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+        .video_list .video_view .vd_img {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+            .video_list .video_view .vd_img img {
+                width: 100%;
+            }
+
+            .video_list .video_view .vd_img .vd_bkbg {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                background-color: black;
+                opacity: 0.6;
+                z-index: 9;
+                box-sizing: border-box;
+            }
+
+.vd_list_txt {
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    padding-top: 10px;
+    font-size: 9pt;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+    .vd_list_txt li {
+        float: left;
+    }
+
+    .vd_list_txt .vd_date {
+        font-size: 8pt;
+        line-height: 19px;
+        float: right;
+        font-family: 'Montserrat';
+        font-weight: 400;
+    }
+
+.video_view .vd_img .play_bt {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+    .video_view .vd_img .play_bt .play {
+        width: 50px;
+        padding: 19% 0;
+    }
+
+.video_view .play_bt .play path {
+    fill: #fff;
+}
+
+.video_view .play_bt .play path {
+    transition: .3s
+}
+
+.video_view:hover .play_bt .play {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9)
+}
+
+    .video_view:hover .play_bt .play path {
+        fill: #fb479a;
+    }
+
+
+
+/*notice*/
+
+.notice_List {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .notice_List ul {
+        padding-bottom: 30px;
+    }
+
+        .notice_List ul li {
+            position: relative;
+            padding: 20px 5%;
+            border-bottom: 1px solid #e1e1e1;
+            cursor: pointer;
+        }
+
+            .notice_List ul li:first-child {
+                border-top: 2px solid #4a4a4a;
+            }
+
+            .notice_List ul li a {
+                position: relative;
+                height: 100%;
+            }
+
+                .notice_List ul li a .date {
+                    display: block;
+                    margin-top: 7px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: #656464;
+                }
+
+    .notice_List .tit_m {
+        font-weight: 500;
+    }
+
+
+/*notice_view*/
+
+.boardView_m {
+    padding-top: 68px;
+}
+
+.boardView_fix_m {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 67px;
+    background: #FFF;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.boardView_title_m {
+    font-size: 20pt;
+    line-height: 67px;
+    text-align: center;
+    color: #333;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+
+.boardView_close_m {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 21px;
+    height: 21px;
+    margin-top: -10px;
+}
+
+    .boardView_close_m img {
+        width: 100%;
+    }
+
+.boardView_header_m {
+    position: relative;
+    padding: 20px 5%;
+    margin: 0 auto;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+
+
+    .boardView_header_m .tit_m {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        color: #333;
+    }
+
+    .boardView_header_m .date_m {
+        display: block;
+        margin-top: 7px;
+        font-size: 12px;
+        font-weight: 400;
+        color: #4a4848;
+    }
+
+    .boardView_header_m.auto {
+        padding: 25px 20px;
+    }
+
+.boardView_info {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+
+.boardView_cont_m {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2;
+    text-align: center;
+    color: #0c0c0c;
+}
+
+    /* 20210906 수정 */
+    .boardView_cont_m .thumbnail iframe {
+        width: 100%;
+        height: 60vw
+    }
+
+.bv_img_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    .bv_img_m img {
+        width: 100%;
+    }
+
+.bv_txt_m {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+
+
+.footer_select {
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #131212;
+    z-index: 1;
+}
+
+
+.selectbox {
+    position: relative;
+    width: 100%; /* 너비설정 */
+    margin: 0 auto;
+    height: 50px;
+    z-index: 1;
+    /* focus 효과*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+    /* focus 효과 */
+    .selectbox.focus {
+        border-color: #66afe9;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    }
+
+    /* 가상 선택자를 활용 화살표 대체 */
+    .selectbox:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        width: 0;
+        height: 0;
+        margin-top: -1px;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #fff;
+    }
+
+    .selectbox label {
+        position: absolute;
+        top: 1px; /* 위치정렬 */
+        left: 5px; /* 위치정렬 */
+        padding: 1.2em .5em; /* select의 여백 크기 만큼 */
+        color: #fff;
+        z-index: -1; /* IE8에서 label이 위치한 곳이 클릭되지 않는 것 해결 */
+    }
+
+    .selectbox select {
+        width: 100%;
+        height: auto; /* 높이 초기화 */
+        line-height: normal; /* line-height 초기화 */
+        font-family: inherit; /* 폰트 상속 */
+        padding: .8em .5em; /* 여백과 높이 결정 */
+        border: 0;
+        opacity: 0; /* 숨기기 */
+        filter: alpha(opacity=0); /* IE8 숨기기 */
+        -webkit-appearance: none; /* 네이티브 외형 감추기 */
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+
+/*schedule*/
+
+.cont_m .cd_calendar_m {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.cd_month {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 10pt;
+}
+
+    .cd_month p {
+        display: inline-block;
+        margin: 0 6px;
+    }
+
+        .cd_month p:first-child {
+            margin-left: 3px;
+        }
+
+        .cd_month p a {
+            color: #969595;
+        }
+
+    .cd_month .month_ck a {
+        color: #000;
+        border-bottom: 2px solid #000;
+        padding-bottom: 5px;
+    }
+
+
+.cd_calendar_m .cd_week_m {
+    width: 100%;
+    padding: 50px 0;
+    border: 1px solid red;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+    .cd_calendar_m .cd_week_m th {
+        padding: 10px 2px;
+        text-align: center;
+        width: 14%;
+        font-size: 11pt;
+        font-weight: 100;
+    }
+
+.cd_calendar_m .cd_day_m td {
+    text-align: center;
+    padding: 15px 0;
+    height: 30px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10pt;
+}
+
+.cd_calendar_m .cd_day_m .sun_m {
+    color: #f00;
+}
+
+.cd_calendar_m .cd_day_m .sch_on_m {
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    color: #fff;
+    vertical-align: middle;
+    line-height: 35px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+    .cd_calendar_m .cd_day_m .sch_on_m a {
+        color: #fff;
+        font-weight: 100;
+    }
+
+
+
+.sc_top {
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+    .sc_top .year_month {
+        position: relative;
+        margin: 20px 0 50px 0;
+        width: 100%;
+    }
+
+        .sc_top .year_month p {
+            text-align: center;
+            font-size: 16pt;
+            font-family: 'Montserrat';
+            font-weight: 300;
+        }
+
+
+
+    .sc_top .slide-obj .btn-prev {
+        position: absolute;
+        top: 25px;
+        left: 5px;
+        width: 10px;
+    }
+
+
+
+    .sc_top .slide-obj .btn-next {
+        position: absolute;
+        top: 25px;
+        right: 5px;
+        width: 10px;
+    }
+
+        .sc_top .slide-obj .btn-prev img,
+        .sc_top .slide-obj .btn-next img {
+            width: 100%;
+        }
+
+
+
+/* 스케줄팝업 */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.pop_inner {
+    padding: 5px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    z-index: 1111111111;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    width: 70%;
+    padding: 5%;
+    margin: 55% auto;
+}
+
+
+.close {
+    position: absolute;
+    z-index: 2;
+    top: -55px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+}
+
+    .close:before,
+    .close:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: -6px
+    }
+
+    .close:before {
+        transform: rotate(45deg);
+    }
+
+    .close:after {
+        transform: rotate(-45deg);
+    }
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.4s;
+    animation: animatezoom 0.4s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.pop_inner .year_month {
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+    .pop_inner .year_month p {
+        text-align: center;
+        font-size: 16pt;
+    }
+
+        .pop_inner .year_month p span {
+            font-size: 10pt;
+        }
+
+
+.sch_cont_m {
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+}
+
+    .sch_cont_m .sch_detail_m {
+        width: 90%;
+        padding: 0 5%;
+        margin-bottom: 15px;
+    }
+
+        .sch_cont_m .sch_detail_m li {
+            font-size: 10pt;
+            line-height: 25px;
+        }
+
+        .sch_cont_m .sch_detail_m .dt_date {
+            font-size: 9pt;
+            width: 100%;
+        }
+
+        .sch_cont_m .sch_detail_m li span {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            font-size: 7pt;
+            border-radius: 8px;
+            color: #fff;
+            text-align: center;
+            line-height: 16px;
+            margin-right: 6px;
+            vertical-align: middle;
+            font-family: 'Montserrat';
+        }
+
+        .sch_cont_m .sch_detail_m li .sbt_magazine {
+            background-color: #e79c89;
+        }
+
+        .sch_cont_m .sch_detail_m li .sbt_tv {
+            background-color: #f596c3;
+        }
+
+        .sch_cont_m .sch_detail_m li .sbt_radio {
+            background-color: #b9d273;
+        }
+
+        .sch_cont_m .sch_detail_m li .sbt_concert {
+            background-color: #72d2c0;
+        }
+
+        .sch_cont_m .sch_detail_m li .sbt_etc {
+            background-color: #f1bd4c;
+        }
+
+    .sch_cont_m.bt_color_m .sch_detail_m li {
+        float: left;
+        font-size: 8pt;
+        color: #8a8989;
+        margin-right: 8px;
+        font-family: 'Montserrat';
+    }
+
+
+/* 에러페이지 */
+.errorbox_m {
+    position: relative;
+    margin: 0 20px;
+    padding: 80px 0 0 0;
+    text-align: center;
+}
+
+    .errorbox_m .error_img_m {
+        font-family: 'Montserrat';
+        text-align: center;
+        font-size: 55px;
+    }
+
+        .errorbox_m .error_img_m img {
+            width: 100%;
+        }
+
+    .errorbox_m .txt01_m {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 23px;
+        color: #333;
+        margin-top: 20px;
+    }
+
+    .errorbox_m .txt02_m {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #504c4c;
+    }
+
+    .errorbox_m .btnText_m {
+        margin-top: 50px;
+    }
+
+
+/* Button */
+.btnText_m {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 17px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.blueLine_m {
+    color: #000;
+    background: #FFF;
+    border: 1px solid #000;
+    font-weight: 400;
+    font-size: 11pt;
+    letter-spacing: 0.1em;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+    .tracklist .tl_tt .dis-line {
+        width: 43%;
+    }
+
+    .gnb_list_m li {
+        height: 40px;
+    }
+
+    .gnb_list_m a {
+        font-size: 22px;
+    }
+
+    .sns_m p {
+        width: 15px;
+    }
+
+    .ArtistLogo_txt_m2 a, .ArtistLogo_txt_m a {
+        font-size: 15pt;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .video_view .vd_img .play_bt .play {
+        padding: 24% 0;
+    }
+
+    .cutimg_m .layout_m .photobox_m {
+        width: 50%;
+    }
+
+        .cutimg_m .layout_m .photobox_m img {
+            width: 95%;
+        }
+
+
+
+    .disco_list .onlin_cover_list {
+        float: left;
+        width: 48%;
+        padding: 0 1%;
+    }
+}
+
+
+
+@media screen and (orientation:landscape) {
+    .mv_img_m {
+        display: none;
+    }
+
+    .mv_img_m2 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+
+
+/*# sourceMappingURL=ui.css.map */

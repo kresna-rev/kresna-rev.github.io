@@ -1,0 +1,477 @@
+
+/* Reset */
+html, body {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, caption, input, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+body, button, input, select, textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: normal;
+    color: #333;
+    font-family: "Spoqa Han Sans", sans-serif;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+fieldset, img {
+    border: 0 none;
+}
+
+dl, ul, ol, menu, li {
+    list-style: none;
+}
+
+address, caption, cite, code, dfn, em, var {
+    font-style: normal;
+}
+
+
+
+button {
+    border: 0 none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a, button, input, select, textarea, label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+
+/*ì–¸ì–´ì„¤ì •*/
+.en {
+    font-family: 'Montserrat';
+}
+
+.ko {
+    font-family: "Spoqa Han Sans", sans-serif;
+}
+
+
+/*ì•„í‹°ìŠ¤íŠ¸ í¬ì¸íŠ¸ ì»¬ëŸ¬*/
+.artist_color_m {
+    color: #fb469b;
+    fill: #fb479a !important;
+}
+
+.artist_crbg_m {
+    background-color: #fb469b;
+}
+
+
+/*ìœ„ë¡œ ì˜¬ë¼ê°€ê¸°*/
+#goTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 77;
+    overflow: hidden;
+    display: inline-block;
+    text-indent: -2000px;
+    white-space: nowrap;
+    display: block;
+    width: 29px;
+    height: 29px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+    #goTop img {
+        width: 100%;
+    }
+
+    #goTop.active {
+        opacity: 1;
+    }
+
+
+
+/* Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 67px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+#header_pf {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 67px;
+}
+
+#header.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+}
+
+
+/*ì•„í‹°ìŠ¤íŠ¸ ë¡œê³ */
+/*0916ìˆ˜ì •*/
+.ArtistLogo_txt_m2 {
+    position: relative;
+    padding: 16px 8px;
+    margin: 0em auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 40px;
+}
+
+    .ArtistLogo_txt_m2 a {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: #000;
+        font-size: 17pt;
+    }
+
+    .ArtistLogo_txt_m2.main_logo a {
+        color: #fff;
+    }
+
+/* 20210906 ìˆ˜ì • */
+.ArtistLogo_txt_m {
+    position: relative;
+    padding: 16px 8px;
+    margin: .5em auto;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    height: 50px;
+}
+
+    .ArtistLogo_txt_m a {
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: #000;
+        font-size: 17pt;
+    }
+    /*0916ìˆ˜ì •ë*/
+
+    .ArtistLogo_txt_m2 img, .ArtistLogo_txt_m img {
+        height: 100%;
+    }
+
+.ham_menu_m {
+    position: absolute;
+    top: 33px;
+    right: 20px;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 21px;
+    height: 18px;
+    margin-top: -9px;
+}
+
+    .ham_menu_m img, .ham_menu_close_m img {
+        width: 100%;
+    }
+
+/* 20210906 ìˆ˜ì • */
+.ham_menu_close_m {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    width: 21px;
+    height: 21px;
+    margin-top: -9px;
+}
+
+.gnb {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 88888;
+}
+
+/* 20210906 ìˆ˜ì • */
+.gnb_list_m {
+    padding: 106px 25px 0;
+    transition: 0.3s margin-top ease-in-out;
+}
+
+    .gnb_list_m li {
+        height: 44px;
+        vertical-align: top;
+    }
+
+    .gnb_list_m a {
+        display: inline-block;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 30px;
+        transition: 0.3s letter-spacing, 2s opacity;
+        color: #333;
+        font-family: 'Montserrat';
+    }
+
+    .gnb_list_m li a:hover {
+        letter-spacing: 0.1em;
+    }
+
+.gnb_link {
+    padding: 22px 68px 50px 68px;
+}
+
+    .gnb_link li {
+        height: 36px;
+        vertical-align: top;
+    }
+
+    .gnb_link a {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #333;
+    }
+
+
+/* Wrap */
+
+#wrap {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 280px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+body.active {
+    position: fixed;
+    width: 100%;
+}
+
+    body.active #header {
+        position: fixed;
+        border-bottom: 0 !important;
+    }
+
+    body.active .gnb {
+        overflow: scroll;
+        visibility: visible;
+        height: 100%;
+        opacity: 1;
+    }
+
+/*ë©”ë‰´-sns*/
+/* 20210906 ìˆ˜ì • */
+.sns_m {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding: 20px 0px 0 25px;
+    box-sizing: border-box;
+}
+
+    .sns_m p {
+        width: 17px;
+        display: inline-block;
+        margin: 10px 15px 10px 2px;
+    }
+
+        .sns_m p img {
+            width: 100%;
+        }
+
+
+
+
+/*ë©”ì¸-ì•¨ë²”ëª…,íƒ€ì´í‹€ëª…*/
+.right_cont_m {
+    position: absolute;
+    width: 80%;
+    right: 30px;
+    /* 20211029 ìˆ˜ì • */
+    bottom: 14%;
+    z-index: 4;
+}
+
+.main_album_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: #fff;
+    text-align: right;
+}
+    /*0828ì¶”ê°€*/
+    .main_album_m .main_album_tt {
+        width: 100%;
+        margin-top: 15px;
+    }
+        /*0828ì¶”ê°€ë*/
+        .main_album_m .main_album_tt a {
+            color: #fff;
+            font-size: 22pt;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            line-height: 40px;
+        }
+
+    .main_album_m .title_m {
+        margin-top: 10px;
+    }
+
+        .main_album_m .title_m a {
+            color: #fff;
+            font-size: 15pt;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin-right: 2px;
+            margin-top: 10px;
+        }
+
+
+
+/*page*/
+
+.page-btn-box-m {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+
+    .page-btn-box-m .page-number {
+        display: inline-block;
+        padding: 0 30px;
+        color: #393939;
+        font-size: 15px;
+        height: 21px;
+        line-height: 21px;
+        vertical-align: middle;
+        letter-spacing: 0;
+    }
+
+    .page-btn-box-m .prev-btn, .page-btn-box-m .next-btn {
+        display: inline-block;
+        width: 11px;
+        height: 21px;
+        color: transparent;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+
+        .page-btn-box-m .prev-btn img, .page-btn-box-m .next-btn img {
+            width: 100%;
+        }
+
+
+
+/* Contents-ìƒë‹¨íƒ€ì´í‹€*/
+
+.container {
+    padding: 50px 0;
+    /* 20211029 ìˆ˜ì • */
+    position: relative;
+    height: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.cont_m {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 40px 0% 95px 0;
+}
+
+.m_title {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22pt;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    letter-spacing: 0.05em;
+}
+
+    .m_title.gallery {
+        margin-bottom: 0;
+    }
+
+
+
+
+
+/* Footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #353535;
+}
+
+    #footer div {
+        width: 100%;
+    }
+
+    #footer .copyright_m {
+        position: relative;
+        width: 100%;
+        font-family: 'Montserrat';
+        font-size: 8.5px;
+        font-weight: 400;
+        line-height: 14px;
+        color: #9a9a9a;
+        text-align: center;
+    }
+
+        #footer .copyright_m span {
+            color: #009be6;
+        }
+
+
+
+#header.main_hdat.active {
+    background: none;
+    border-bottom: none;
+}
