@@ -3,6 +3,8 @@
 This is My Portfolio Website.<br>
 [version 2]
 # Preview
+![preview](https://github.com/kresna-rev/kresna-rev.github.io/blob/main/preview.jpg)
+
 See My Portfolio Web on this link: 
 <a href="https://kresna-rev.github.io/" target="_blank">Click Here</a>. 👈<p>
 &nbsp;
