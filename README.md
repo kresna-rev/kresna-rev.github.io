@@ -1,7 +1,7 @@
 ## ![](https://img.shields.io/badge/awikwok-banget-informational?style=flat&logo=react&color=61DAFB)
 
 This is My Portfolio Website.
-
+[version 2]
 # Preview
 See My Portfolio Web on this link: 
 <a href="https://kresna-rev.github.io/" target="_blank">Click Here</a>. 👈<p>
