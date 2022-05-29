@@ -1,6 +1,7 @@
 ## ![](https://img.shields.io/badge/awikwok-banget-informational?style=flat&logo=react&color=61DAFB)
 
 This is My Portfolio Website.<br>
+This web using mobile-first methodology.<br>
 [version 2]
 # Preview
 ![preview](https://github.com/kresna-rev/kresna-rev.github.io/blob/main/preview.jpg)
