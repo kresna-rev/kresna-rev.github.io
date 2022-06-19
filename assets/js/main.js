@@ -98,7 +98,7 @@ modalCloses.forEach((modalClose) =>{
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.portfolio__container', {
-  loop: true,
+  loop: false,
   cssMode: true,
   pagination: {
     el: '.swiper-pagination',
@@ -107,7 +107,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
+  }
 })
 
 /*==================== TESTIMONIAL ====================*/
@@ -214,3 +214,22 @@ const a = new Date();
 let b = a.getFullYear();
 
 document.getElementById("year").innerHTML = b;
+
+/*==================== SWEETIE WEBERJAEGERMENJENSEN ====================*/ 
+const Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: 2000,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+function Sweet(icon, text) {
+  Toast.fire({
+    icon: `${icon}`,
+    title: `${text}`
+  })
+}
