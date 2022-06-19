@@ -958,7 +958,7 @@
             e.preventDefault()
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
               .then(response => {
-                Sweet('success', 'Your email has been sent')
+                Sweet('success', 'Your message has been sent!')
                 form.reset()
               })
               .catch(error => console.error('Error!', error.message))
